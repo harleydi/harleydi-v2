@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.homepage {
+    text-align: center;
+    margin-top: 80px;
+    margin-top: 6rem;
+}
+
+.nameTitle {
+    font-size: 9rem;
+    margin: 0;
+    margin-top: 8rem;
+    padding: 0;
+    background-image: $ap-color;
+    background-clip: text;
+    color: transparent;
+    font-family: $font-stack-primary;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roleTitle {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: $ap-color-secondary;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1rem;
+}
+
+button {
+    background-color: transparent;
+    background-image: $ap-color;
+    background-clip: text;
+    color: transparent;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    border-image-source: $ap-color;
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    margin-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+
+
+
+@media all and (max-width: 640px) {
+    .nameTitle {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+
+    .roleTitle {
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        margin-bottom: -3rem;
+    }
+}

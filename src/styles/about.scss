@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+.aboutSection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic {
+    width: 30vw;
+    img {
+        height: 20rem;
+        width: 20rem;
+        margin-top: 8rem;
+    }
+}
+
+// img {
+//     // height: 40rem;
+//     // width: 60rem;
+//     padding: 8rem 4rem;
+//     // margin-left: 4rem;
+//     // margin-top: 8rem;
+// }
+
+.introSection {
+    width: 50%;
+    text-align: center;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.introTitle {
+    font-family: $font-stack-primary;
+    font-size: 3rem;
+    background-image: $ap-color-secondary;
+    background-clip: text;
+    color: transparent;
+}
+
+.intro {
+    font-family: $font-stack-secondary;
+    font-size: large;
+    letter-spacing: .4rem;
+}
+
+@media all and (max-width: 640px) {
+    img {
+        margin-left: 2.5rem;
+        
+    }
+    .aboutSection {
+        flex-direction: column;
+        margin-top: -5rem;
+    }
+
+    .introSection {
+        padding: auto;
+        width: 80vw;
+    }
+
+    .introTitle {
+        font-size: 1.4rem;
+    }
+
+    .intro {
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+@import './variables.scss';
+
+.contact {
+    margin-top: 8rem;
+}
+
+.mainTitle {
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-family: $font-stack-secondary;
+    font-size: 4rem;
+    font-weight: bolder;
+    background-image: $ap-color-secondary;
+    background-clip: text;
+    color: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    label {
+        margin: 1rem;
+        font-family: $font-stack-secondary;
+        letter-spacing: 10px;
+        input {
+            margin: .5rem;
+            height: 2rem;
+            width: 20rem;
+        }
+        textarea {
+            margin: .5rem;
+            height: 8rem;
+            width: 20rem;
+        }
+    }
+    a button {
+        margin: 0 2rem;
+        padding: 0;
+        height: 3rem;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 3px;
+        cursor: pointer;
+    }
+}
+
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    // margin-top: 14rem;
+}
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+// img:hover {
+//     transition: all 0.8s ease;
+//     box-shadow: black;
+// }
+
+// .email:hover {
+//     content: 'disneyharley26@gmail.com';
+// }
+
+@media all and (max-width: 640px) {
+
+    .form button {
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        margin-right: 2rem;
+    }
+}

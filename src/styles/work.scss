@@ -1,0 +1,147 @@
+@import './variables.scss';
+
+// UNIVERSAL
+span {
+    color: #4a5759;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+// CUSTOM
+
+.work {
+    margin-top: 5rem;
+}
+
+.workHeader {
+    text-align: center;
+    background-image: $ap-color;
+    background-clip: text;
+    // color: $ap-color;
+    letter-spacing: 5px;
+    padding-top: 2rem;
+    font-family: $font-stack-primary;
+//   font-weight: 400;
+}
+
+.sortTitles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ptypeF {
+    
+}
+
+.ptypeC {
+    
+}
+
+.container {
+    display: flex;
+    padding-top: 5rem;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-items: center;
+    flex-wrap: wrap;
+    // border: white solid 2px;
+}
+
+.card {
+    // border: 2px solid white;
+    text-align: center;
+    height: 40vh;
+    margin: 0 3rem;
+    img {
+        height: 12rem;
+        width: 22rem;
+        border: 1px solid #e1e1e11a;
+        border-top-color: #e1e1e180;
+        border-left-color: #e1e1e180;
+        border-radius: 1rem;
+        box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+        // box-shadow: 10px 10px 5px 0 rgba(10, 10, 1, 0.35);
+        // box-shadow: 0px 2px 20px 2px #898989;
+        transition: height 1s, width 1s;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-top: 80px;
+        font-size: larger;
+    }
+    
+    a:hover {
+        text-shadow: 0 0 3px #111;
+    }
+
+    .buttons {
+        margin: 5px;
+        padding: 3px;
+        background-image: $ap-color;
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+
+
+// .card:hover img {
+//     position: relative;
+//     height: auto;
+//     width: 70%;
+//     flex-wrap: nowrap;
+// }
+
+
+.content {
+    height: auto;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 400ms 0ms;
+}
+
+.card:hover .content {
+    opacity: 1;
+    transition: opacity 200ms 200ms;
+}
+
+
+.card .content {
+    text-align: center;
+}
+
+.content  {
+    height: auto;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    background-clip: text;
+    color: transparent;
+    font-family: $font-stack-secondary;
+}
+
+
+.pname {
+    color: $ap-color-secondary;
+    font-family: $font-stack-secondary;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
