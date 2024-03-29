@@ -62,8 +62,8 @@ export const zodiac = {
 
 export const ecourt = {
     name: 'Ecourt',
-    liveUrl: '',
-    githubUrl: '',
+    liveUrl: 'https://ecourt.netlify.app/',
+    githubUrl: 'https://github.com/stars/harleydi/lists/ecourt',
     image: work,
     category: '*'
 }
