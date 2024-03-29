@@ -30,7 +30,7 @@ export const Pv1 = {
 
 export const PotterWorld = {
     name: 'Potter World',
-    liveUrl: '',
+    liveUrl: 'https://harrypotter-world.netlify.app/',
     githubUrl: 'https://github.com/harleydi/final-project',
     image: pw,
     category: 'F'
@@ -46,8 +46,8 @@ export const Kwainasiafa = {
 
 export const ecommerce = {
     name: 'Ecommerce',
-    liveUrl: '',
-    githubUrl: '',
+    liveUrl: 'https://hdi-ecommerce-server.onrender.com/',
+    githubUrl: 'https://github.com/stars/harleydi/lists/ecommerce',
     image: work,
     category: 'C'
 }
