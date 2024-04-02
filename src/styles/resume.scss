@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+.resume {
+    height: 100vh;
+    margin-top: 16rem;
+    // margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    font-size: 6rem;
+    font-family: $font-stack-secondary;
+    background-image: $ap-color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // color: $ap-color-secondary;
+}
+
+.resume-pic {
+    height: 80rem;
+    width: 60rem;
+    
+}
+
+.dl-btn {
+    // padding: 0;
+    margin: 2rem 0;
+}
+
+.dl-btn > a {
+    text-decoration: none;
+    background-image: $ap-color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media all and (max-width: 1024px) {
+    .resume-pic {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    .resume {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        margin-top: -14rem;
+    }
+
+    .form button {
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        margin-right: 2rem;
+    }
+
+    .resume-pic {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+}

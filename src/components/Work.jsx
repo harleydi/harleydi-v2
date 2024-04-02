@@ -12,9 +12,9 @@ export default function Work() {
   const [ptypeC, setPtypeC] = useState(false)
   const projects = [Kwainasiafa, MCTS, MusicWorld, PotterWorld, Pv1, ecommerce, zodiac, ecourt]
 
-  useEffect(() => {
-
-  }, [])
+  // useEffect(() => {
+    
+  // }, [])
 
   const handleSortTitles = event => {
     const target = event.target.innerText
@@ -57,9 +57,9 @@ export default function Work() {
     <div className='work'>
       <h1 className='workHeader'>PROJECTS</h1>
       <div className='sortTitles'>
-        <span onClick={handleSortTitles} style={{ color: ptype === '*' ? '#5492FA' : '#4a5759' }} >All</span>
-        <span onClick={handleSortTitles} style={{ color: ptypeF ? '#5492FA' : '#4a5759' }} className='ptypeF'>Fundamental</span>
-        <span onClick={handleSortTitles} style={{ color: ptypeC ? '#5492FA' : '#4a5759' }} className='ptypeC'>Creative</span>
+        <span onClick={handleSortTitles} style={{ color: ptype === '*' ? '#FFA500' : '#4a5759' }} className='sort-color' >All</span>
+        <span onClick={handleSortTitles} style={{ color: ptypeF ? '#FFA500' : '#4a5759' }} className='ptypeF sort-color'>Fundamental</span>
+        <span onClick={handleSortTitles} style={{ color: ptypeC ? '#FFA500' : '#4a5759' }} className='ptypeC'>Creative</span>
       </div>
       <div className='container'>
         {projects.map(project => {

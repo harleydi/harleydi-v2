@@ -11,7 +11,8 @@ export const MCTS = {
         liveUrl: 'https://mcts-site.netlify.app/',
         githubUrl: 'https://github.com/harleydi/MCTS',
         image: mctsImg,
-        category: 'F'
+        category: '*',
+        comingSoon: false
 }
 
 export const MusicWorld = {
@@ -19,7 +20,8 @@ export const MusicWorld = {
     liveUrl: 'https://music-world.netlify.app/',
     githubUrl: 'https://github.com/harleydi/Music-World',
     image: musicworld,
-    category: 'F'
+    category: '*',
+    comingSoon: false
 }
 
 export const Pv1 = {
@@ -27,7 +29,8 @@ export const Pv1 = {
     liveUrl: 'https://disneyharley-portfolio2020.netlify.app',
     githubUrl: 'https://github.com/harleydi/harley-portfolio-2020',
     image: pv1,
-    category: '*'
+    category: '*',
+    comingSoon: false
 }
 
 export const PotterWorld = {
@@ -35,7 +38,8 @@ export const PotterWorld = {
     liveUrl: 'https://harrypotter-world.netlify.app/',
     githubUrl: 'https://github.com/harleydi/final-project',
     image: pw,
-    category: 'F'
+    category: '*',
+    comingSoon: false
 }
 
 export const Kwainasiafa = {
@@ -43,7 +47,8 @@ export const Kwainasiafa = {
     liveUrl: '',
     githubUrl: '',
     image: work,
-    category: 'C'
+    category: '*',
+    comingSoon: true
 }
 
 export const ecommerce = {
@@ -51,7 +56,8 @@ export const ecommerce = {
     liveUrl: 'https://hdi-ecommerce-server.onrender.com/',
     githubUrl: 'https://github.com/stars/harleydi/lists/ecommerce',
     image: ecom,
-    category: 'C'
+    category: 'F',
+    comingSoon: false
 }
 
 export const zodiac = {
@@ -59,7 +65,8 @@ export const zodiac = {
     liveUrl: '',
     githubUrl: '',
     image: work,
-    category: 'C'
+    category: '*',
+    comingSoon: true
 }
 
 export const ecourt = {
@@ -67,5 +74,6 @@ export const ecourt = {
     liveUrl: 'https://ecourt.netlify.app/',
     githubUrl: 'https://github.com/stars/harleydi/lists/ecourt',
     image: ecourtp,
-    category: '*'
+    category: 'C',
+    comingSoon: false
 }

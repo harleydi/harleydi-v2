@@ -1,22 +1,24 @@
 @import './variables.scss';
 
 .homepage {
+    height: 100%;
     text-align: center;
-    margin-top: 80px;
-    margin-top: 6rem;
+    padding: 0;
+    margin-top: -4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nameTitle {
     font-size: 9rem;
     margin: 0;
-    margin-top: 8rem;
     padding: 0;
     background-image: $ap-color;
     background-clip: text;
     color: transparent;
     font-family: $font-stack-primary;
     font-weight: 400;
-    font-style: normal;
 }
 
 .roleTitle {
@@ -46,8 +48,27 @@ button {
 }
 
 
+@media all and (max-width: 1024px) {
+    .homepage {
+        width: 100vw;
+    }
+    .nameTitle {
+        font-size: 3rem;
+        // margin-top: 15rem;
+    }
 
-@media all and (max-width: 640px) {
+    .roleTitle {
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        margin-bottom: -3rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .homepage {
+        width: inherit;
+        height: 100vh;
+    }
     .nameTitle {
         font-size: 3rem;
         margin-top: 15rem;

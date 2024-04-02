@@ -3,7 +3,7 @@
 
 .sidemain {
     position: fixed;
-    margin-top: 30rem;
+    margin-top: 40rem;
     margin-left: -.5rem;
 }
 
@@ -11,9 +11,12 @@
 .sidenav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px;
+
+    height: 10rem;
+    width: 1.5rem;
 
     padding: 1rem 1rem;
     backdrop-filter: blur(1rem);
@@ -36,5 +39,15 @@ img {
 }
 
 
+@media all and (max-width: 1024px) {
+    .sidenav {
+        margin-top: 15rem;
+    }
+}
 
-
+@media all and (max-width: 480px) {
+    // .sidenav {
+    //     margin-top: -2rem;
+    //     padding-left: -2rem;
+    // }
+}

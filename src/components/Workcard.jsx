@@ -7,8 +7,14 @@ const Workcard = ({ data }) => {
           <img src={data.image} alt='pv1' />
           <p className='pname'>{data.name}</p>
             <div className='content'>
-              <a className='buttons' href={data.liveUrl}>Live</a>
-              <a className="buttons" href={data.githubUrl}>Github</a>
+              {data.comingSoon ? (
+                <p>Deploying ! Coming Soon ! </p>
+              ) : (
+                <div>
+                  <a className='buttons' href={data.liveUrl}>Live</a>
+                  <a className="buttons" href={data.githubUrl}>Github</a>
+                </div>
+              )}
             </div>
         </div>
   )
