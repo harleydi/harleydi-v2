@@ -6,17 +6,27 @@
     align-items: center;
     height: 6vh;
     width: 100%;
+    margin: 0 auto;
     top: 0;
     left: 0;
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(1rem);
     position: sticky;
     z-index: 100;
+
     // Nav Border 
     border: 1px solid transparent;
     border-bottom-color: #e1e1e11a;
     border-left-color: #e1e1e180;
     border-right-color: #e1e1e11a;
+}
+
+.nav-content {
+    width: fit-content(100vw);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {

@@ -3,7 +3,7 @@
 .aboutSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 6rem;
 }
 
@@ -15,14 +15,6 @@
         margin-top: 8rem;
     }
 }
-
-// img {
-//     // height: 40rem;
-//     // width: 60rem;
-//     padding: 8rem 4rem;
-//     // margin-left: 4rem;
-//     // margin-top: 8rem;
-// }
 
 .intro-container {
     display: flex;
@@ -46,9 +38,9 @@
 }
 
 .intro {
-    font-family: $font-stack-secondary;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    letter-spacing: .4rem;
+    letter-spacing: .2rem;
     width: 50rem;
 }
 
@@ -92,13 +84,20 @@
         
     }
     .aboutSection {
-        flex-direction: column;
-        margin-top: -5rem;
+        width: 100vw;
+        flex-direction: row;
+        
+    }
+
+    .intro-container {
+        display: flex;
+        flex-direction: row;
+
     }
 
     .introSection {
-        padding: auto;
-        width: 80vw;
+        // padding: auto;
+        // width: 100vw;
     }
 
     .introTitle {

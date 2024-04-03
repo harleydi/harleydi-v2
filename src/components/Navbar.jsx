@@ -20,24 +20,19 @@ export default function Navbar() {
     contact: () => setResumeActive(false)
   }
 
-  const onClickHandler = (e) => {
-
-
-    const activeToggler = () => {
-      
-    }
-    console.log(() => `set${'About'}Active(true)`)
-  }
+ 
 
   return (
     <div className='navbar'>
-      <h4 className='logo'>디즈니</h4>
-      <ul className='nav'>
-        <Link name='name' to="/"><li id='navItem' name='Home'>Home</li></Link>
-        <Link name='work' to="/work"><li id='navItem' name='Work'>Projects</li></Link>
-        <Link to='/about' name='about '><li name='About' id='navItem' onClick={onClickHandler} >About</li></Link>
-        <Link name='resume' to='/resume'><li id='nav-item' name='Resume'>Resume</li></Link>
-      </ul>
+      <div className="nav-content">
+        <h4 className='logo'>디즈니</h4>
+        <ul className='nav'>
+          <Link name='name' to="/"><li id='navItem' name='Home'>Home</li></Link>
+          <Link name='work' to="/work"><li id='navItem' name='Work'>Projects</li></Link>
+          <Link to='/about' name='about '><li name='About' id='navItem'>About</li></Link>
+          <Link name='resume' to='/resume'><li id='nav-item' name='Resume'>Resume</li></Link>
+        </ul>
+      </div>
     </div>
   )
 }
