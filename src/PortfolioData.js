@@ -53,7 +53,7 @@ export const Kwainasiafa = {
 
 export const ecommerce = {
     name: 'Ecommerce',
-    liveUrl: 'https://hdi-ecommerce-server.onrender.com/',
+    liveUrl: 'https://hdi-ecommerce.netlify.app/',
     githubUrl: 'https://github.com/stars/harleydi/lists/ecommerce',
     image: ecom,
     category: 'F',
