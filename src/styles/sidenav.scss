@@ -3,7 +3,7 @@
 
 .sidemain {
     position: fixed;
-    margin-top: 40rem;
+    margin-top: 30rem;
     margin-left: -.5rem;
 }
 
@@ -11,9 +11,13 @@
 .sidenav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 50px;
+    font-size: xx-large;
+    i {
+        color: $ap-one;
+    }
 
     height: 10rem;
     width: 1.5rem;
