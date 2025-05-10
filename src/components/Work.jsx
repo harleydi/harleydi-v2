@@ -10,16 +10,12 @@ export default function Work() {
   const [ptype, setPtype] = useState('*')
   const [ptypeF, setPtypeF] = useState(false)
   const [ptypeC, setPtypeC] = useState(false)
-  const projects = [Kwainasiafa, MCTS, MusicWorld, PotterWorld, Pv1, ecommerce, zodiac, ecourt]
+  const projects = [MCTS, PotterWorld, Pv1, ecommerce, ecourt]
 
-  // useEffect(() => {
-    
-  // }, [])
+  
 
   const handleSortTitles = event => {
     const target = event.target.innerText
-    // setPtypeC(!ptypeC)
-    // setPtypeF(!ptypeF)
     console.log(target)
 
     if (target === 'All') { 
